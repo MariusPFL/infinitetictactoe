@@ -1,0 +1,42 @@
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  margin-top: 100px;
+}
+
+
+.singleField{
+  border: "1px solid black";
+}
+
+.row{
+  display: flex;
+  min-height: 100px;
+  flex-direction: row;
+}
+
+.column{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.columnContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
