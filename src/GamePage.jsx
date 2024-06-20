@@ -243,7 +243,7 @@ function GamePage() {
               <label>
                 Starte ein neues Spiel
               </label>
-              <Button onClick={() => {window.location.href="/"}}>
+              <Button onClick={() => {window.location.reload()}}>
                 Neu starten
               </Button>
             </div>
@@ -253,7 +253,7 @@ function GamePage() {
                 <Button
                   onClick={() => {
                     localStorage.setItem(LSFIELD, true);
-                    window.location.href = "/";
+                    window.location.reload();
                   }}
                 >
                   Spiele ein Runde 5x5
@@ -262,7 +262,7 @@ function GamePage() {
                 <Button
                   onClick={() => {
                     localStorage.setItem(LSFIELD, false);
-                    window.location.href = "/";
+                    window.location.reload();
                   }}
                 >
                   Spiele eine Runde 3x3
