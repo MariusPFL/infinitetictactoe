@@ -1,8 +1,8 @@
 import Confetti from "react-confetti";
-import trophyImage from "./assets/trophy.jpg";
+import trophyImage from "../../assets/trophy.jpg";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-function WinSite() {
+function WinPage() {
     let {player} = useParams();
     useEffect(() => {
         typeWritter("winText", "Gratuliere Spieler " + player, 60)
@@ -26,7 +26,7 @@ function WinSite() {
             <Confetti></Confetti>
             <div className="columnContainer">
                 <h1 id="winText"></h1>
-                <img width={"700px"} src={trophyImage}/>
+                <img width={"80%"} src={trophyImage}/>
                 <button onClick={(event) => {event.preventDefault(); window.location.href="/"}}>
                     Nochmals Spielen
                 </button>
@@ -35,4 +35,4 @@ function WinSite() {
     )
 }
 
-export default WinSite;
+export default WinPage;
